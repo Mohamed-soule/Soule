@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}Contact - My Portfolio{% endblock %}
+
+{% block content %}
+<section class="contact">
+    <div class="container">
+        <h1>Get In Touch</h1>
+        
+        <div class="contact-content">
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p><strong>Email:</strong> your.email@example.com</p>
+                <p><strong>Phone:</strong> (123) 456-7890</p>
+                <p><strong>Location:</strong> Your City, Country</p>
+                
+                <h3>Follow Me</h3>
+                <div class="social-links-contact">
+                    <a href="https://github.com" target="_blank">GitHub</a>
+                    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                    <a href="https://twitter.com" target="_blank">Twitter</a>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h2>Send Me a Message</h2>
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
