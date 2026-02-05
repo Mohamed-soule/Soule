@@ -2,6 +2,10 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
+@app.route('/health')
+def health():
+    return 'OK', 200
+
 @app.route('/')
 def home():
     return render_template('index.html')
